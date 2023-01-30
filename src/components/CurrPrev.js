@@ -9,8 +9,7 @@ function CurrPrev(props){
   return (
      <div className = 'output'>
 
-           <input type = "number" value={num.previous} className = 'previous-operand' 
-            onChange={e => setNum({...num,previous:e.target.value})}>
+           <input type = "number" value={num.previous} className = 'previous-operand'>
            </input >
 
            <label >Write Number Below</label>
