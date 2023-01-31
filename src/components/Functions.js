@@ -28,7 +28,7 @@ function Functions(props){
 
         string = string.substring(0,string.length-1)
 
-        setNum({...num,current : string.parserInt()})
+        setNum({...num,current : Number(string)})
   }
 
   // sign changing
