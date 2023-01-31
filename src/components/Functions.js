@@ -23,7 +23,12 @@ function Functions(props){
 
   // delete last element
   const deleteOne = () => {
-    setNum({...num,current : Math.floor(num.current/10)})
+//     setNum({...num,current : Math.floor(num.current/10)})
+        let string = num.current.toString()
+
+        string = string.substring(0,string.length-1)
+
+        setNum({...num,current : string.parserInt()})
   }
 
   // sign changing
